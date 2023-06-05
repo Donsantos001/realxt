@@ -82,7 +82,7 @@ class _SavedState extends State<Saved> {
               alignment: Alignment.centerLeft,
               child: Text(
                 "Saved Items",
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 34, fontWeight: FontWeight.w800),
               ),
             ),
             const SizedBox(

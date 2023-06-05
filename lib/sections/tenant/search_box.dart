@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 
 class SearchBox extends StatelessWidget {
-  Function() onFilter;
-  Function() onSearch;
-  SearchBox({super.key, required this.onFilter, required this.onSearch});
+  final Function()? onFilter;
+  final Function() onSearch;
+  final bool? filter;
+  const SearchBox(
+      {super.key,
+      this.onFilter,
+      required this.onSearch,
+      this.filter = true});
 
   @override
   Widget build(BuildContext context) {
@@ -33,15 +38,17 @@ class SearchBox extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10),
                 ),
                 hintText: "Search",
-                prefixIcon: IconButton(
-                  padding: const EdgeInsets.only(right: 5),
-                  onPressed: onFilter,
-                  icon: const Icon(
-                    Icons.filter_alt_outlined,
-                    size: 24,
-                    color: Colors.black,
-                  ),
-                ),
+                prefixIcon: filter!
+                    ? IconButton(
+                        padding: const EdgeInsets.only(right: 5),
+                        onPressed: onFilter,
+                        icon: const Icon(
+                          Icons.filter_alt_outlined,
+                          size: 24,
+                          color: Colors.black,
+                        ),
+                      )
+                    : null,
                 suffixIcon: IconButton(
                   padding: const EdgeInsets.only(right: 5),
                   onPressed: onSearch,

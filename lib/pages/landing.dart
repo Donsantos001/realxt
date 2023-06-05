@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:realestate/pages/auth/login.dart';
 import 'package:realestate/pages/tenant/home.dart';
+import 'package:realestate/pages/tenant/inbox.dart';
 import 'package:realestate/pages/tenant/profile.dart';
 import 'package:realestate/pages/tenant/saved.dart';
 
@@ -17,7 +18,7 @@ class _LandingState extends State<Landing> {
   static final List<Widget> _pages = <Widget>[
     const Home(),
     const Saved(),
-    const Home(),
+    const Inbox(),
     Profile(),
   ];
 

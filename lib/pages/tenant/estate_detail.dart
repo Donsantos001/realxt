@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import '../../sections/tenant/owner_peep.dart';
 import '../../widgets/rating.dart';
 
 class EstateDetail extends StatefulWidget {
@@ -167,6 +168,10 @@ class _EstateDetailState extends State<EstateDetail> {
                     ),
                   ),
                 ),
+                const SizedBox(
+                  height: 20,
+                ),
+                const OwnerPeep(),
                 const SizedBox(
                   height: 20,
                 ),
