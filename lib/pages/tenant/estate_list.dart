@@ -27,17 +27,16 @@ class _EstateListState extends State<EstateList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        foregroundColor: Colors.black,
-        backgroundColor: Colors.white,
+        foregroundColor: Theme.of(context).textTheme.titleLarge!.color,
+        backgroundColor: Theme.of(context).cardColor,
         title: const Text(
           "Estates",
           style: TextStyle(
             fontSize: 22,
-            color: Colors.black,
             fontWeight: FontWeight.w600,
           ),
         ),
-        elevation: 0.0,
+        elevation: 0.5,
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(

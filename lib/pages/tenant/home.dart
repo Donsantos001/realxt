@@ -19,6 +19,7 @@ class _HomeState extends State<Home> {
     super.initState();
     FlutterNativeSplash.remove();
   }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -26,11 +27,10 @@ class _HomeState extends State<Home> {
       child: Column(
         children: [
           Container(
-            decoration: const BoxDecoration(
-              color: Colors.white,
+            decoration: BoxDecoration(
               border: Border(
                 bottom: BorderSide(
-                  color: Color.fromARGB(255, 223, 219, 219),
+                  color: Theme.of(context).highlightColor,
                 ),
               ),
             ),
@@ -60,9 +60,6 @@ class _HomeState extends State<Home> {
               ),
             ),
           ),
-          // const SizedBox(
-          //   height: 4,
-          // ),
           Expanded(
             child: SingleChildScrollView(
               physics: const BouncingScrollPhysics(),

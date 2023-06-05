@@ -75,23 +75,23 @@ class HomeTop extends StatelessWidget {
               ),
               onPressed: () {},
               child: Row(
-                children: const [
-                  Icon(Icons.location_on_outlined),
-                  SizedBox(
+                children: [
+                  const Icon(Icons.location_on_outlined),
+                  const SizedBox(
                     width: 5,
                   ),
                   Text(
                     "Lagos, Nigeria",
                     style: TextStyle(
-                      color: Colors.black,
+                      color: Theme.of(context).textTheme.labelMedium!.color,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 5,
                   ),
                   Icon(
                     Icons.keyboard_arrow_down_rounded,
-                    color: Colors.black,
+                    color: Theme.of(context).textTheme.labelMedium!.color,
                   ),
                 ],
               ),

@@ -118,13 +118,13 @@ class Profile extends StatelessWidget {
                           borderRadius: BorderRadius.circular(20),
                         ),
                         padding: const EdgeInsets.all(15),
-                        backgroundColor: Colors.white,
+                        backgroundColor: Theme.of(context).cardColor,
                       ),
                       child: Row(
                         children: [
                           Icon(
                             _options[index].icon,
-                            color: Colors.green,
+                            color: Theme.of(context).colorScheme.secondary,
                             size: 30,
                           ),
                           const SizedBox(
@@ -132,9 +132,11 @@ class Profile extends StatelessWidget {
                           ),
                           Text(
                             _options[index].title,
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontSize: 18,
-                              color: Colors.black,
+                              color:
+                                  Theme.of(context).textTheme.titleLarge!.color,
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
                         ],

@@ -19,8 +19,9 @@ class _EstateDetailState extends State<EstateDetail> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        iconTheme: const IconThemeData(color: Colors.black),
-        backgroundColor: Colors.white,
+        foregroundColor: Theme.of(context).textTheme.titleLarge!.color,
+        backgroundColor: Theme.of(context).cardColor,
+        elevation: 0.5,
       ),
       body: SafeArea(
         child: SingleChildScrollView(

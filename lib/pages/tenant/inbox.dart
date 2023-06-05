@@ -1,7 +1,10 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:realestate/sections/tenant/search_box.dart';
 import 'package:realestate/widgets/estate_item.dart';
 
+import '../../resource/constants.dart';
 import '../../widgets/inbox_tile.dart';
 
 class Inbox extends StatefulWidget {
@@ -49,7 +52,11 @@ class _InboxState extends State<Inbox> {
                   itemCount: 8,
                   itemBuilder: ((context, index) => Column(
                         children: [
-                          InboxTile(),
+                          InboxTile(
+                            chatState: ChatState.values.elementAt(
+                              Random().nextInt(ChatState.values.length),
+                            ),
+                          ),
                           Divider(
                             height: 0,
                           ),

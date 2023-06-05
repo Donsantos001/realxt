@@ -31,7 +31,7 @@ class FeaturedItem extends StatelessWidget {
           ),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
-            color: Colors.white,
+            color: Theme.of(context).cardColor,
             boxShadow: const [
               BoxShadow(
                 color: Colors.grey,

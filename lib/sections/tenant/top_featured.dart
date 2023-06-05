@@ -11,7 +11,7 @@ class TopFeatured extends StatelessWidget {
       padding: const EdgeInsets.symmetric(
         vertical: 10,
       ),
-      decoration: BoxDecoration(color: Colors.purple.shade50),
+      decoration: BoxDecoration(color: Theme.of(context).highlightColor),
       child: Column(
         children: [
           Padding(
@@ -24,13 +24,6 @@ class TopFeatured extends StatelessWidget {
                   "Top featured",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
                 ),
-                // TextButton(
-                //   onPressed: () {},
-                //   child: const Text(
-                //     "see all",
-                //     style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
-                //   ),
-                // ),
               ],
             ),
           ),

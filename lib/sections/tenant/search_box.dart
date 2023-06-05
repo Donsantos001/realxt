@@ -5,10 +5,7 @@ class SearchBox extends StatelessWidget {
   final Function() onSearch;
   final bool? filter;
   const SearchBox(
-      {super.key,
-      this.onFilter,
-      required this.onSearch,
-      this.filter = true});
+      {super.key, this.onFilter, required this.onSearch, this.filter = true});
 
   @override
   Widget build(BuildContext context) {
@@ -42,10 +39,10 @@ class SearchBox extends StatelessWidget {
                     ? IconButton(
                         padding: const EdgeInsets.only(right: 5),
                         onPressed: onFilter,
-                        icon: const Icon(
+                        icon: Icon(
                           Icons.filter_alt_outlined,
                           size: 24,
-                          color: Colors.black,
+                          color: Theme.of(context).textTheme.labelLarge!.color,
                         ),
                       )
                     : null,

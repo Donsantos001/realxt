@@ -67,12 +67,12 @@ class _FilterState extends State<Filter> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Theme.of(context).cardColor,
         centerTitle: true,
         leading: IconButton(
-          icon: const Icon(
+          icon: Icon(
             Icons.close,
-            color: Colors.black,
+            color: Theme.of(context).textTheme.titleLarge!.color,
           ),
           onPressed: () {
             Navigator.pop(context);
@@ -89,11 +89,11 @@ class _FilterState extends State<Filter> {
             ),
           ),
         ],
-        title: const Text(
+        title: Text(
           "Filter",
           style: TextStyle(
             fontSize: 22,
-            color: Colors.black,
+            color: Theme.of(context).textTheme.titleLarge!.color,
             fontWeight: FontWeight.w600,
           ),
         ),
