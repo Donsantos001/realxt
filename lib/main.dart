@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Palette.secondary,
         primarySwatch: Palette.secondary,
       ),
-      home: const IntroSlider(),
+      home: const Landing(),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }

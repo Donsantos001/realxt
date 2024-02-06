@@ -31,7 +31,7 @@ class HomeTop extends StatelessWidget {
                 const Text(
                   "Welcome back Santos",
                   textAlign: TextAlign.start,
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                 ),
               ],
             ),

@@ -52,9 +52,9 @@ class _EstateListState extends State<EstateList> {
               },
               onSearch: () {},
             ),
-            const SizedBox(
-              height: 10,
-            ),
+            // const SizedBox(
+            //   height: 10,
+            // ),
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.symmetric(

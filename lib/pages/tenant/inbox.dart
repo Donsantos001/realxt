@@ -21,35 +21,42 @@ class _InboxState extends State<Inbox> {
       Padding(
         padding: const EdgeInsets.only(
           top: 30,
-          left: 15,
-          right: 15,
+          left: 0,
+          right: 0,
           bottom: 10,
         ),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
-            const Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                "Inbox",
-                style: TextStyle(fontSize: 34, fontWeight: FontWeight.w800),
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 15,
               ),
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            SearchBox(
-              filter: false,
-              onSearch: () {},
+              child: Column(children: [
+                const Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "Inbox",
+                    style: TextStyle(fontSize: 34, fontWeight: FontWeight.w800),
+                  ),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                SearchBox(
+                  filter: false,
+                  onSearch: () {},
+                ),
+              ]),
             ),
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 5,
+                padding: const EdgeInsets.only(
+                  top: 5,
                 ),
                 child: ListView.builder(
                   physics: const BouncingScrollPhysics(),
-                  itemCount: 8,
+                  itemCount: 18,
                   itemBuilder: ((context, index) => Column(
                         children: [
                           InboxTile(
@@ -57,7 +64,7 @@ class _InboxState extends State<Inbox> {
                               Random().nextInt(ChatState.values.length),
                             ),
                           ),
-                          Divider(
+                          const Divider(
                             height: 0,
                           ),
                         ],

@@ -26,8 +26,8 @@ class FeaturedItem extends StatelessWidget {
           constraints: const BoxConstraints(
             minWidth: 210,
             minHeight: 210,
-            maxWidth: 230,
-            maxHeight: 230,
+            maxWidth: 250,
+            maxHeight: 250,
           ),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
@@ -76,7 +76,7 @@ class FeaturedItem extends StatelessWidget {
                                   "Duplex",
                                   textAlign: TextAlign.start,
                                   style: TextStyle(
-                                    fontSize: 18,
+                                    fontSize: 16,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
@@ -89,7 +89,7 @@ class FeaturedItem extends StatelessWidget {
                                   style: TextStyle(
                                     color:
                                         Theme.of(context).colorScheme.primary,
-                                    fontSize: 20,
+                                    fontSize: 18,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),

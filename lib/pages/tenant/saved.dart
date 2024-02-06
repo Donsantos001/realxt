@@ -97,7 +97,7 @@ class _SavedState extends State<Saved> {
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.symmetric(
-                  horizontal: 5,
+                  horizontal: 0,
                 ),
                 child: ListView.builder(
                   physics: const BouncingScrollPhysics(),

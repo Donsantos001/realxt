@@ -121,12 +121,17 @@ class _EstateItemState extends State<EstateItem> {
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text(
-                          "2 Bedroom Flat",
-                          textAlign: TextAlign.start,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
+                        const Padding(
+                          padding: EdgeInsets.only(
+                            right: 5,
+                          ),
+                          child: Text(
+                            "2 Bedroom Flat",
+                            textAlign: TextAlign.start,
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
                           ),
                         ),
                         const SizedBox(height: 10),
@@ -141,7 +146,9 @@ class _EstateItemState extends State<EstateItem> {
                               child: Text(
                                 "17, Owolabi street, Ajayi Road, Lekki, Lagos State",
                                 textAlign: TextAlign.start,
-                                style: TextStyle(),
+                                style: TextStyle(
+                                  fontSize: 14,
+                                ),
                               ),
                             ),
                           ],
@@ -187,7 +194,7 @@ class _EstateItemState extends State<EstateItem> {
                           textAlign: TextAlign.start,
                           style: TextStyle(
                               fontWeight: FontWeight.w400,
-                              fontSize: 18,
+                              fontSize: 16,
                               color: Theme.of(context).colorScheme.primary),
                         ),
                       ],
@@ -197,15 +204,15 @@ class _EstateItemState extends State<EstateItem> {
               ],
             ),
             Positioned(
-              top: 3,
-              right: 3,
+              top: 0,
+              right: 0,
               child: widget.delete
                   ? IconButton(
                       onPressed: () => _delete(context),
                       icon: const Icon(
                         Icons.close_rounded,
                         color: Colors.red,
-                        size: 32,
+                        size: 26,
                       ),
                     )
                   : IconButton(
@@ -217,7 +224,7 @@ class _EstateItemState extends State<EstateItem> {
                       icon: Icon(
                         _liked ? Icons.favorite : Icons.favorite_outline,
                         color: Colors.red,
-                        size: 32,
+                        size: 26,
                       ),
                     ),
             )
